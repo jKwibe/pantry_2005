@@ -18,6 +18,6 @@ class Pantry
   end
 
   def enough_ingredients_for?(recipe)
-    @stock.keys.all?(recipe.ingredients)
+    recipe.ingredients.all?(@stock.keys)
   end
 end
